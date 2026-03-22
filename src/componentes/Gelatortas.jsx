@@ -2,21 +2,31 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Gelatortas.module.css';
 import Gela_Personalizada from '../assets/Products/Gela_Personalizada.png';
+import Gela_Personalizada_1 from '../assets/Products/Gela_Personalizada_1.png';
 import Gela_Torta from '../assets/Products/Gela_torta.png';
+import Gela_Torta_1 from '../assets/Products/Gela_torta_1.png';
+import Gela_Torta_2 from '../assets/Products/Gela_torta_2.png';
 import Encapsulado_de_Frutas from '../assets/Products/Encapsulado_de_frutas.png';
+import Encapsulado_de_Frutas_1 from '../assets/Products/Encapsulado_de_frutas_1.png';
 import Gela_gomitas from '../assets/Products/Gela_gomitas.png';
 import Gela_mosaico from '../assets/Products/Gela_mosaico.png';
+import Gela_mosaico_1 from '../assets/Products/Gela_mosaico_1.png';
 import Leche_asada from '../assets/Products/Leche_asada.png';
 import Tentacion_de_baileys from '../assets/Products/Tentacion_de_baileys.png';
 import Gelagurt from '../assets/Products/Gelagurt.png';
+import Gelagurt_1 from '../assets/Products/Gelagurt_1.png';
 import Gelapaleta from '../assets/Products/Gelapaleta.png';
+import Gelapaleta_1 from '../assets/Products/Gelapaleta_1.png';
+import Individuales_1 from '../assets/Products/Individuales_1.png';
+import Individuales_2 from '../assets/Products/Individuales_2.png';
+import Individuales from '../assets/Products/Individuales.png';
 import { useCart } from '../context/CartContext';
 
 const productsData = [
     {
         id: 1,
         name: 'Gela Personalizada',
-        image: [Gela_Personalizada],
+        image: [Gela_Personalizada, Gela_Personalizada_1],
         description: 'Contiene: Tres sabores de mousse. Elige tu diseño recreado en gelatina.',
         flavors: ['Fresa', 'Maracuya', 'Uva', 'Limón', 'Chicle', 'Coco', 'Vainilla', 'Pina', 'Frutos Rojos'],
         personalizations: ['Temática', 'Fotografía'],
@@ -26,7 +36,7 @@ const productsData = [
     {
         id: 2,
         name: 'Gela - Torta',
-        image: [Gela_Torta],
+        image: [Gela_Torta, Gela_Torta_2, Gela_Torta_1],
         description: 'Contiene: Un biscocho, tres sabores de mousse y un relleno a elegir fruta o salsa.',
         flavors: ['Fresa', 'Maracuya', 'Uva', 'Limón', 'Chicle', 'Coco', 'Vainilla', 'Pina', 'Frutos Rojos'],
         fillings: ['Nutella', 'Dulce de leche', 'Mermelada', 'Sirope', 'Coulis'],
@@ -37,7 +47,7 @@ const productsData = [
     {
         id: 3,
         name: 'Encapsulado de Frutas',
-        image: [Encapsulado_de_Frutas],
+        image: [Encapsulado_de_Frutas, Encapsulado_de_Frutas_1],
         description: 'Contiene: Tres sabores de mousse y tres frutas a elegir.',
         flavors: ['Fresa', 'Maracuya', 'Uva', 'Limón', 'Chicle', 'Coco', 'Vainilla', 'Pina', 'Frutos Rojos'],
         fruits: ['Durazno', 'Fresa', 'Kiwi', 'Uva', 'Piña'],
@@ -57,7 +67,7 @@ const productsData = [
     {
         id: 5,
         name: 'Gela-Mosaico',
-        image: [Gela_mosaico],
+        image: [Gela_mosaico, Gela_mosaico_1],
         description: 'Contiene: Mousse con base cremosa de tres leches y cubitos de gelatinas de cinco diferentes sabores.',
         flavors: ['Fresa', 'Maracuya', 'Uva', 'Limón', 'Chicle', 'Coco', 'Vainilla', 'Pina', 'Frutos Rojos'],
         fruits: ['Durazno', 'Fresa', 'Kiwi', 'Uva', 'Piña'],
@@ -86,7 +96,7 @@ const productsData = [
     {
         id: 8,
         name: 'GelaGurt',
-        image: [Gelagurt],
+        image: [Gelagurt, Gelagurt_1],
         description: 'Armonía perfecta: Disfruta de la cremosidad del yogurt y la textura ligera de la gelatina. Contiene: Personalización con imagen, dos sabores de yogurt, dos sabores de gelatina y una fruta.',
         flavors: ['Fresa', 'Maracuya', 'Uva', 'Limón', 'Chicle', 'Coco', 'Vainilla', 'Pina', 'Frutos Rojos'],
         fruits: ['Durazno', 'Fresa', 'Kiwi', 'Uva', 'Piña'],
@@ -96,7 +106,7 @@ const productsData = [
     {
         id: 9,
         name: 'GelaPaleta',
-        image: [Gelapaleta],
+        image: [Gelapaleta, Gelapaleta_1, Individuales_1, Individuales_2, Individuales],
         description: 'Nuestras gelatinas individuales personalizadas en presentación vaso o gelapaleta, son perfectas de postres, bocadito dulce, Petit para acompañamiento en tus: fiestas, bautizos, cumpleaños o sorpresas especiales. Ya que son deliciosos y completamente personalizadas con la temática de tu evento, fotografía, nombre o personaje favorito. Bajo pedido después de 12 unidades,valor individual',
         flavors: ['Fresa', 'Maracuya', 'Uva', 'Limón', 'Chicle', 'Coco', 'Vainilla', 'Pina', 'Frutos Rojos'],
         portions: [1],
