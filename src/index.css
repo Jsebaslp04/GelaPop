@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@400;500;600&family=Comic+Neue:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('./assets/Fondo/Fondo_grueso.svg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+html,
+body,
+*:not(iframe) {
+  cursor: url('./assets/ensalada-de-frutas_32.png'), auto !important;
+}
+
+a,
+button,
+[role="button"],
+input,
+select,
+textarea {
+  cursor: url('./assets/ensalada-de-frutas_32.png'), pointer !important;
+}

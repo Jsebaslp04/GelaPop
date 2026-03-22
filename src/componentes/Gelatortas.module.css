@@ -1,0 +1,383 @@
+.pageWrapper {
+    background-color: #ffffff;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.pageContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.topBar {
+    margin-bottom: 2rem;
+}
+
+.backLink {
+    text-decoration: none;
+    color: #05b1d2;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: opacity 0.3s;
+}
+
+.backLink:hover {
+    opacity: 0.8;
+}
+
+.productsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.productCard {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.imageContainer {
+    width: 100%;
+    height: 250px;
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.imageContainer img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.imageContainer:hover img {
+    transform: scale(1.05);
+}
+
+.zoomIcon {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #05b1d2;
+    opacity: 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.imageContainer:hover .zoomIcon {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 2rem;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+}
+
+.modalContent {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    cursor: default;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent img {
+    max-width: 100%;
+    max-height: 90vh;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+.closeModalBtn {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+    line-height: 1;
+}
+
+.closeModalBtn:hover {
+    color: #05b1d2;
+}
+
+.sliderBtnLeft,
+.sliderBtnRight {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    color: #333;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.sliderBtnLeft:hover,
+.sliderBtnRight:hover {
+    background: #05b1d2;
+    color: #fff;
+}
+
+.sliderBtnLeft {
+    left: 10px;
+}
+
+.sliderBtnRight {
+    right: 10px;
+}
+
+.dotsContainer {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+    z-index: 2;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.activeDot {
+    background: #05b1d2;
+    transform: scale(1.3);
+}
+
+.modalSliderBtnLeft,
+.modalSliderBtnRight {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.modalSliderBtnLeft {
+    left: -60px;
+}
+
+.modalSliderBtnRight {
+    right: -60px;
+}
+
+@media (max-width: 768px) {
+    .modalSliderBtnLeft {
+        left: 10px;
+    }
+
+    .modalSliderBtnRight {
+        right: 10px;
+    }
+}
+
+.productInfo {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    flex: 1;
+}
+
+.productTitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.productDescription {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.portionsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.label {
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 600;
+}
+
+.portionsOptions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.portionBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #f0f0f0;
+    color: #333;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portionBtn.selected {
+    background: #05b1d2;
+    color: #fff;
+}
+
+.flavorSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.flavorSelect {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+}
+
+.flavorSelect:focus {
+    border-color: #05b1d2;
+}
+
+.priceActionSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #05b1d2;
+}
+
+.addToCartBtn {
+    background: #05b1d2;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s;
+}
+
+.addToCartBtn:hover {
+    background: #8cc0c4;
+    transform: translateY(-2px);
+}
+
+.alert {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    animation: fadeInOut 3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        bottom: 10px;
+    }
+
+    10% {
+        opacity: 1;
+        bottom: 20px;
+    }
+
+    90% {
+        opacity: 1;
+        bottom: 20px;
+    }
+
+    100% {
+        opacity: 0;
+        bottom: 10px;
+    }
+}
