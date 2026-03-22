@@ -105,7 +105,7 @@ const productsData = [
     },
     {
         id: 9,
-        name: 'GelaPaleta',
+        name: 'GelaPaleta - Gela Vaso',
         image: [Gelapaleta, Gelapaleta_1, Individuales_1, Individuales_2, Individuales],
         description: 'Nuestras gelatinas individuales personalizadas en presentación vaso o gelapaleta, son perfectas de postres, bocadito dulce, Petit para acompañamiento en tus: fiestas, bautizos, cumpleaños o sorpresas especiales. Ya que son deliciosos y completamente personalizadas con la temática de tu evento, fotografía, nombre o personaje favorito. Bajo pedido después de 12 unidades,valor individual',
         flavors: ['Fresa', 'Maracuya', 'Uva', 'Limón', 'Chicle', 'Coco', 'Vainilla', 'Pina', 'Frutos Rojos'],
