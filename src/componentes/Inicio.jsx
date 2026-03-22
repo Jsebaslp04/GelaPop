@@ -10,9 +10,10 @@ import artesanal from '../assets/Artesanal.png';
 import personalizado from '../assets/Personalizado.png';
 import calidad from '../assets/Calidad.png';
 
-import torta1 from '../assets/Products/Torta_1.png';
-import torta2 from '../assets/Products/Torta_2.png';
-import torta3 from '../assets/Products/Torta_3.png';
+import torta1 from '../assets/Torta_banner_1.png';
+import torta2 from '../assets/Torta_banner_2.png';
+import torta3 from '../assets/Torta_banner_3.png';
+import torta4 from '../assets/Torta_banner_4.png';
 
 export function Banner() {
     return (
@@ -33,6 +34,9 @@ export function Banner() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={torta3} alt="Torta 3" className={styles.banner} />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={torta4} alt="Torta 4" className={styles.banner} />
                 </SwiperSlide>
             </Swiper>
         </div>
