@@ -33,7 +33,7 @@ export function Footer() {
                         </svg>
                     </div>
                     <h3 className={styles.columnTitle}>Ubicación</h3>
-                    <p className={styles.columnText}>Vargas, España</p>
+                    <p className={styles.columnText}>Toledo, Madrid - España</p>
                 </div>
 
                 <div className={styles.column}>
