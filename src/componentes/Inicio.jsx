@@ -10,8 +10,8 @@ import artesanal from '../assets/Artesanal.png';
 import personalizado from '../assets/Personalizado.png';
 import calidad from '../assets/Calidad.png';
 
-import torta2 from '../assets/Torta_banner_2.png';
 import torta1 from '../assets/Torta_banner_1.png';
+import torta2 from '../assets/Torta_banner_2.png';
 import torta3 from '../assets/Torta_banner_3.png';
 import torta4 from '../assets/Torta_banner_4.png';
 

@@ -16,7 +16,7 @@ export function Footer() {
                         <a href="#" target="_blank" rel="noreferrer" className={styles.socialLink}>
                             <img src={facebookIcon} alt="Facebook" />
                         </a>
-                        <a href="#" target="_blank" rel="noreferrer" className={styles.socialLink}>
+                        <a href="https://www.instagram.com/geelapop/" target="_blank" rel="noreferrer" className={styles.socialLink}>
                             <img src={instagramIcon} alt="Instagram" />
                         </a>
                         <a href="https://wa.me/34622217104?text=Hola!%20GelaPop%20Vi%20tu%20catalogo%20y%20me%20interesa%20comprar%20el%20siguiente%20producto..." target="_blank" rel="noreferrer" className={styles.socialLink}>
