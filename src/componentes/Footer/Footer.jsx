@@ -13,7 +13,7 @@ export function Footer() {
                     <img src={gelaPopLogo} alt="Gela Pop" className={styles.logoImg} />
                     <p className={styles.slogan}>Endulzando momentos especiales</p>
                     <div className={styles.socialIcons}>
-                        <a href="#" target="_blank" rel="noreferrer" className={styles.socialLink}>
+                        <a href="https://www.facebook.com/sweet.outfit.2025?rdid=UREQdatjlKYXmRAF&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18ib967nbG%2F#" target="_blank" rel="noreferrer" className={styles.socialLink}>
                             <img src={facebookIcon} alt="Facebook" />
                         </a>
                         <a href="https://www.instagram.com/geelapop/" target="_blank" rel="noreferrer" className={styles.socialLink}>

@@ -58,21 +58,21 @@ export function Inicio() {
                                 <img src={artesanal} alt="100% Artesanal" className={styles.banner} />
                             </div>
                             <h3 className={styles.feature_title}>100%<br />Artesanal</h3>
-                            <p className={styles.feature_text}>Elaborados con ingredientes de primera calidad y amor</p>
+                            <p className={styles.feature_text}>Dinos tu idea y la convertimos en una experiencia única. Fusionamos sabores únicos y arte personalizado</p>
                         </div>
                         <div className={`${styles.feature_card} ${styles.card_purple}`}>
                             <div className={`${styles.icon_circle} ${styles.circle_purple}`}>
                                 <img src={personalizado} alt="Pedidos Personalizados" className={styles.banner} />
                             </div>
                             <h3 className={styles.feature_title}>Pedidos<br />Personalizados</h3>
-                            <p className={styles.feature_text}>Adapta porciones y sabores a tu medida y preferencia</p>
+                            <p className={styles.feature_text}>Toma el control absoluto y personaliza cada plato: adapta las porciones a tu apetito y ajusta los sabores para que encajen perfectamente con tu paladar único</p>
                         </div>
                         <div className={`${styles.feature_card} ${styles.card_blue}`}>
                             <div className={`${styles.icon_circle} ${styles.circle_blue}`}>
                                 <img src={calidad} alt="Calidad Garantizada" className={styles.banner} />
                             </div>
                             <h3 className={styles.feature_title}>Calidad<br />Garantizada</h3>
-                            <p className={styles.feature_text}>¡Ven por tu detalle recién hecho!</p>
+                            <p className={styles.feature_text}>Respaldamos cada uno de nuestros productos con un sello de garantía total, asegurando que la frescura, el sabor y la perfección lleguen a ti exactamente como los imaginaste</p>
                         </div>
                     </div>
                 </div>

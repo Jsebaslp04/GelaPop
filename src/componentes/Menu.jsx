@@ -57,12 +57,13 @@ export const Menu = () => {
                         </Link>
                     </div>
                     <div className={styles.socialSection}>
-                        <a href="https://facebook.com/" target="_blank" rel="noreferrer" className={styles.iconBtn}><img src={facebook} alt="Facebook" className={styles.socialIcon} /></a>
+                        <a href="https://www.facebook.com/sweet.outfit.2025?rdid=UREQdatjlKYXmRAF&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18ib967nbG%2F#" target="_blank" rel="noreferrer" className={styles.iconBtn}><img src={facebook} alt="Facebook" className={styles.socialIcon} /></a>
                         <a href="https://www.instagram.com/geelapop/" target="_blank" rel="noreferrer" className={styles.iconBtn}><img src={instagram} alt="Instagram" className={styles.socialIcon} /></a>
                         <a href="https://wa.me/34622217104?text=Hola!%20GelaPop%20Vi%20tu%20catalogo%20y%20me%20interesa%20comprar%20el%20siguiente%20producto..." target="_blank" rel="noreferrer" className={styles.iconBtn}><img src={whatsapp} alt="WhatsApp" className={styles.socialIcon} /></a>
                     </div>
                 </div>
             </header>
+            <div className={styles.separator}></div>
         </>
     );
 };
