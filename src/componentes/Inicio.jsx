@@ -65,7 +65,7 @@ export function Inicio() {
                                 <img src={personalizado} alt="Pedidos Personalizados" className={styles.banner} />
                             </div>
                             <h3 className={styles.feature_title}>Pedidos<br />Personalizados</h3>
-                            <p className={styles.feature_text}>Toma el control absoluto y personaliza cada plato: adapta las porciones a tu apetito y ajusta los sabores para que encajen perfectamente con tu paladar único</p>
+                            <p className={styles.feature_text}>Ya sea para un postre especial o como el bocadito dulce ideal en tus fiestas, nuestras gelatortas son la combinación perfecta de sabor y creatividad. Las personalizamos totalmente: elige tu temática favorita, una fotografía especial, nombres o personajes. ¡El toque mágico para tus bautizos y cumpleaños! </p>
                         </div>
                         <div className={`${styles.feature_card} ${styles.card_blue}`}>
                             <div className={`${styles.icon_circle} ${styles.circle_blue}`}>
